@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie-edge"/>
+    <link rel="icon" href="../images/logo.png" type="image/icon type">
+    <title>Taha Aziz Robotics</title>
+    <link rel="stylesheet" type="text/css" href="../style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> 
+    <script src="css_browser_selector.js" type="./text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+</head>
+<body class="subbody">
+    <div class="navbar">
+        <ul class="subnav">
+            <li><a href="../index.html#works">← Back</a></li>
+        </ul>
+    </div>
+    <div id="subtop-text">Robotic Biped</div>
+    <div class="work">
+        <div style="margin-top: 16%;">
+            Nicknamed "Gimpy", this robot is a project I did for a computer engineering class in high school.
+            Gimpy is a mobile, battery powered, fully automated 2 legged crwaling robot. However, it was not orignally 
+            supposed to be gimpy. The original plan was planning on creating a four legged walking robot, 
+            but unfortunately did not have the parts available to do so. Otherwise, all other original goals were met.
+            <br/><br/><a style="font-weight: bolder;" href="https://github.com/controlmech/biped"  target="_blank" rel="noopener noreferrer">View source code</a>
+            <br/><br/>
+            <span style="font-size: 2.5em">Design</span><br/><br/>
+            Gimpy is composed of a plexiglass board, which holds together metal and 3D printed brackets.
+            These brackets are connected by 3 servo motors in each leg, creating three joints and degrees of freedom.
+            An ultrasonic sensor is present on the front for wall detection.
+            These components are connected to an Arduino which controls them and delivers power from the 5V battery pack.
+            Two wheels are installed on the back so it can drag itself along.
+            Gimpy is programmed to crawl forwards, and turn to avoid obstacles. It will change it's walking cycle 
+            depending on it's proximity to a wall.<br/><br/>
+            <span style="font-size: 2.5em">Next steps</span><br/><br/>
+            I hope to learn more about power electronics and feedback control during my studies at Waterloo and co-ops, 
+            and reengineer this project with a fresh solution.
+        </div>
+        <div style="text-align: center; font-family: 'Poppins', sans-serif;">
+            <video style="max-width: 75%;" muted autoplay loop>
+                <source src="../images/corner.mp4" type="video/mp4">
+            </video> 
+            <br/>Getting out of a corner<br/><br/>
+            <img style="max-width: 75%;" src="../images/stand.jpg"/>
+            <br/>Front with sensors visible<br/><br/>
+            <video style="max-width: 75%;" muted autoplay loop>
+                <source src="../images/tough.mp4" type="video/mp4">
+            </video> 
+            <br/>Putting it in a tough spot<br/><br/>
+            <video style="max-width: 75%;" muted autoplay loop>
+                <source src="../images/normal.mp4" type="video/mp4">
+            </video> 
+            <br/>Walking cycles and obstacle avoidance<br/><br/>
+        </div>
+    </div>
+    <script src="../works/back_slide.js" type="text/javascript"></script>
+</body>
+</html>
