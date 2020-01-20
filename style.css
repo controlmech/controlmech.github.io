@@ -1,0 +1,336 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    scrollbar-color: gold rgb(50,50,50);
+}   
+.win.gecko #top-text {
+    stroke-linecap: initial;
+}
+.win.gecko .container {
+    scroll-snap-type: y mandatory;
+}
+::-webkit-scrollbar {
+    width: 13px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 6.5px;
+}
+::-webkit-scrollbar-thumb {
+    background: gold;
+    border-radius: 6.5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: goldenrod;
+}
+.mainbody{
+    width: 100vw;
+    height: 400vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-image: linear-gradient(125deg,
+    rgb(102, 35, 37),rgb(50, 49, 73),rgb(20, 20, 40), rgb(20, 20, 20));
+    background-size: 400% 400%;
+    animation: bganimation 9s infinite;
+}
+@keyframes bganimation {
+    0%{
+        background-position: 0% 0%;
+    }
+    25%{
+        background-position: 0% 100%;
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+    75%{
+        background-position: 100% 0%;
+    }
+}
+a{
+    text-decoration: none;
+    color: white;
+    transition: 0.25s ease;
+    cursor: pointer;
+}
+a:hover{
+    color: hotpink;
+}
+p{
+    color: white;
+    z-index: 2;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    position: absolute;
+    left: 11.7%;
+}
+.container{
+    position: relative;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.child{
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+}
+.navbar{
+    position: fixed;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    z-index: 3;
+}
+.nav{
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    margin-top: 3.5%;
+    margin-left: 10%; 
+    opacity: 0%;
+    animation: fade-in-up 1.0s ease forwards 1.0s;  
+}
+ul li a{
+    margin: 20px;
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    transition: 0.25s ease;
+}
+ul li a:hover{
+    transform: scale(2);
+    color: hotpink;
+}
+#top-text{
+    position: relative;
+    z-index: 2;
+    top: 17.5%;
+    left: 11.7%;
+    stroke-linecap: square;
+}
+#path-1-outside-1{
+    animation: fill 1s ease forwards 2.3s;
+}
+@keyframes fill{
+    to{
+        fill: white;
+    }
+}
+#middle-text{
+    color: white;
+    z-index: 2;
+    font-size: 2.5em;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    position: absolute;
+    top: 41%;
+    left: 11.7%;
+    opacity: 0%;
+    animation: fade-in-up 1.0s ease forwards 2.0s;
+}
+#middle-text-top{
+    transition: 0.5s ease;
+}
+#middle-text-top:hover{
+    transform: translateX(88px);
+    color: hotpink;
+}
+#middle-text-middle{
+    transition: 0.5s ease;
+}
+#middle-text-middle:hover{
+    transform: translateX(88px);
+    color: hotpink;
+}
+#middle-text-bottom{
+    transition: 0.5s ease;
+}
+#middle-text-bottom:hover{
+    transform: translateX(88px);
+    color: hotpink;
+}
+#top-text path:nth-child(2){
+    stroke-dasharray: 534.6;
+    stroke-dashoffset: 534.6;
+    animation: line-anim 1.0s ease forwards;
+}
+#top-text path:nth-child(3){
+    stroke-dasharray: 239.80862426757812;
+    stroke-dashoffset: 239.80862426757812;
+    animation: line-anim 1.5s ease forwards 0.2s;
+}
+#top-text path:nth-child(4){
+    stroke-dasharray: 106;
+    stroke-dashoffset: 106;
+    animation: line-anim 1.0s ease forwards 0.4s;
+}
+#top-text path:nth-child(5){
+    stroke-dasharray: 227;
+    stroke-dashoffset: 227;
+    animation: line-anim 1.0s ease forwards 0.6s;
+}
+#top-text path:nth-child(6){
+    stroke-dasharray: 93.15;
+    stroke-dashoffset: 93.15;
+    animation: line-anim 1.0s ease forwards 0.8s;
+}
+#top-text path:nth-child(7){
+    stroke-dasharray: 668.7831420898438;
+    stroke-dashoffset: 668.7831420898438;
+    animation: line-anim 1.0s ease forwards 1.0s;
+}
+#top-text path:nth-child(8){
+    stroke-dasharray: 336.8;
+    stroke-dashoffset: 336.8;
+    animation: line-anim 1.0s ease forwards 1.2s;
+}
+#top-text path:nth-child(9){
+    stroke-dasharray: 506.44427490234375;
+    stroke-dashoffset: 506.44427490234375;
+    animation: line-anim 1.5s ease forwards 1.4s;
+}
+#top-text path:nth-child(10){
+    stroke-dasharray: 477.7676696777344;
+    stroke-dashoffset: 477.7676696777344;
+    animation: line-anim 1.0s ease forwards 1.6s;
+}
+#top-text path:nth-child(11){
+    stroke-dasharray: 506.44439697265625;
+    stroke-dashoffset: 506.44439697265625;
+    animation: line-anim 1.5s ease forwards 1.8s;
+}
+@keyframes line-anim{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes fade-in-up{
+    0%{
+        opacity: 0%;
+        transform: translateY(50%);
+    }
+    50%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+        transform: translateY(0%);
+    }
+}
+
+/* Finally on section 2/4 */
+#works{
+    display: flex;
+    flex-direction: column; 
+}
+.card{
+    display: grid;
+    z-index: 2;
+    grid-template-columns: 420px;
+    grid-template-areas: "text";
+    padding: 7px;
+    transform: translate(11%, 155%);
+    transition: 0.5s ease;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+}
+.card:hover{
+    transform: translate(225px, 155%);
+    color: hotpink;
+}
+.card-text{
+    grid-area: text;
+    text-align: left;
+}
+.card-text #date{
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+}
+.card-text h2{
+    margin-top: 0px;
+    font-size: 28px; 
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+.image{
+    position: absolute;
+    width: 500px;
+    height: 667px;
+    border-radius: 18px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.imageOne{
+    background-image: url("images/outside_raw.jpg");
+    left: 42%;
+    top: 5.8%;
+    transform: rotate(90deg);
+    opacity: 0%;
+    animation: image-in 1.0s ease forwards 2.5s;
+}
+.imageFive{
+    background-image: url("images/predev.jpg");
+    left: 42%;
+    top: 105.8%;
+    transform: rotate(90deg);
+}
+.imageNine{
+    background-image: url("images/sit_raw.jpg");
+    left: 42%;
+    top: 205.8%;
+    transform: rotate(90deg);
+}
+.imageTen{
+    background-image: url("images/squat_raw.jpg");
+    left: 42%;
+    top: 305%;
+    transform: rotate(90deg);
+}
+@keyframes image-in{
+    to{
+        opacity: 100%;
+    }
+}
+/*post*/
+.subbody{
+    width: 100vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: rgb(20, 20, 20);
+    background-size: 400% 400%;
+}
+.subnav{
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    margin-top: 4.3%;
+    margin-left: 10.5%; 
+    opacity: 0%;
+    animation: fade-in-up 1.0s ease forwards 0.5s;  
+}
+#subtop-text{
+    position: absolute;
+    z-index: 2;
+    top: 17%;
+    left: 11.7%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.2em;
+    color: gold;
+}
+.work {
+    display: flex;
+    justify-content: center;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    color: white;
+    opacity: 0%;
+    animation: fade-in-up 1.0s ease forwards;  
+}
+.work > div {
+    margin-top: 10%;
+    width: 38%; 
+}
