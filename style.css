@@ -28,23 +28,20 @@
     height: 400vh;
     overflow-y: hidden;
     overflow-x: hidden;
-    background-image: linear-gradient(125deg,
-    rgb(102, 35, 37),rgb(50, 49, 73),rgb(20, 20, 40), rgb(20, 20, 20));
+    background-image: linear-gradient(
+    rgb(53, 74, 92),rgb(85, 74, 74),rgb(27, 20, 20));
     background-size: 400% 400%;
-    animation: bganimation 9s infinite;
+    animation: bganimation 9s infinite; 
 }
 @keyframes bganimation {
     0%{
         background-position: 0% 0%;
     }
-    25%{
+    33%{
+        background-position: 0% 50%;
+    }
+    67%{
         background-position: 0% 100%;
-    }
-    50%{
-        background-position: 100% 100%;
-    }
-    75%{
-        background-position: 100% 0%;
     }
 }
 a{
@@ -110,7 +107,7 @@ ul li a:hover{
 #top-text{
     position: relative;
     z-index: 2;
-    top: 17.5%;
+    top: 13%;
     left: 11.7%;
     stroke-linecap: square;
 }
@@ -137,21 +134,21 @@ ul li a:hover{
     transition: 0.5s ease;
 }
 #middle-text-top:hover{
-    transform: translateX(88px);
+    transform: translateX(15%);
     color: hotpink;
 }
 #middle-text-middle{
     transition: 0.5s ease;
 }
 #middle-text-middle:hover{
-    transform: translateX(88px);
+    transform: translateX(15%);
     color: hotpink;
 }
 #middle-text-bottom{
     transition: 0.5s ease;
 }
 #middle-text-bottom:hover{
-    transform: translateX(88px);
+    transform: translateX(15%);
     color: hotpink;
 }
 #top-text path:nth-child(2){
@@ -241,7 +238,7 @@ ul li a:hover{
     color: white;
 }
 .card:hover{
-    transform: translate(225px, 155%);
+    transform: translate(15%, 155%);
     color: hotpink;
 }
 .card-text{
@@ -314,13 +311,10 @@ ul li a:hover{
     animation: fade-in-up 1.0s ease forwards 0.5s;  
 }
 #subtop-text{
-    position: absolute;
-    z-index: 2;
-    top: 17%;
-    left: 11.7%;
-    font-family: 'Poppins', sans-serif;
-    font-size: 3.2em;
-    color: gold;
+    z-index:2; 
+    font-family: Poppins; 
+    font-size: 3.2em; 
+    color:gold;
 }
 .work {
     display: flex;
@@ -331,6 +325,10 @@ ul li a:hover{
     animation: fade-in-up 1.0s ease forwards;  
 }
 .work > div {
-    margin-top: 10%;
+    margin-top: 15%;
     width: 38%; 
+}
+#footer{
+    font-family: poppins;
+    font-size: 0.9em;
 }
