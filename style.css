@@ -30,7 +30,7 @@
     overflow-x: hidden;
     background-image: linear-gradient(
     rgb(53, 74, 92),rgb(85, 74, 74),rgb(27, 20, 20));
-    background-size: 400% 400%;
+    background-size: 300% 300%;
     animation: bganimation 9s infinite; 
 }
 @keyframes bganimation {
@@ -56,7 +56,7 @@ a:hover{
 p{
     color: white;
     z-index: 2;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-family: "Palatino Linotype";
     position: absolute;
     left: 11.7%;
 }
@@ -87,27 +87,26 @@ p{
     display: flex;
     justify-content: right;
     list-style: none;
-    margin-top: 3.5%;
-    margin-left: 10%; 
+    margin-top: 4.7vh;
+    margin-left: 9.2vw; 
     opacity: 0%;
     animation: fade-in-up 1.0s ease forwards 1.0s;  
 }
 ul li a{
-    margin: 20px;
+    margin: 2.5vw;
     color: white;
     font-size: 1.2em;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins";
     text-decoration: none;
     transition: 0.25s ease;
 }
 ul li a:hover{
-    transform: scale(2);
     color: hotpink;
 }
 #top-text{
     position: relative;
     z-index: 2;
-    top: 13%;
+    top: 8vh;
     left: 11.7%;
     stroke-linecap: square;
 }
@@ -122,8 +121,8 @@ ul li a:hover{
 #middle-text{
     color: white;
     z-index: 2;
-    font-size: 2.5em;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 6.5vmin;
+    font-family: "Palatino Linotype";
     position: absolute;
     top: 41%;
     left: 11.7%;
@@ -219,8 +218,6 @@ ul li a:hover{
         transform: translateY(0%);
     }
 }
-
-/* Finally on section 2/4 */
 #works{
     display: flex;
     flex-direction: column; 
@@ -230,15 +227,15 @@ ul li a:hover{
     z-index: 2;
     grid-template-columns: 420px;
     grid-template-areas: "text";
-    padding: 7px;
-    transform: translate(11%, 155%);
+    padding: 1vh;
+    transform: translate(11%, 75%);
     transition: 0.5s ease;
     text-align: center;
     cursor: pointer;
     color: white;
 }
 .card:hover{
-    transform: translate(15%, 155%);
+    transform: translate(15%, 75%);
     color: hotpink;
 }
 .card-text{
@@ -246,13 +243,12 @@ ul li a:hover{
     text-align: left;
 }
 .card-text #date{
-    font-size: 13px;
-    font-family: 'Poppins', sans-serif;
+    font-size: 2.5vmin;
+    font-family: "Poppins";
 }
 .card-text h2{
-    margin-top: 0px;
-    font-size: 28px; 
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 4.5vmin; 
+    font-family: "Palatino Linotype";
 }
 .image{
     position: absolute;
@@ -311,15 +307,15 @@ ul li a:hover{
     animation: fade-in-up 1.0s ease forwards 0.5s;  
 }
 #subtop-text{
-    z-index:2; 
+    z-index: 2; 
     font-family: Poppins; 
-    font-size: 3.2em; 
+    font-size: 8vmin; 
     color:gold;
 }
 .work {
     display: flex;
     justify-content: center;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-family: "Palatino Linotype";
     color: white;
     opacity: 0%;
     animation: fade-in-up 1.0s ease forwards;  
@@ -329,6 +325,6 @@ ul li a:hover{
     width: 38%; 
 }
 #footer{
-    font-family: poppins;
+    font-family: "poppins";
     font-size: 0.9em;
 }
